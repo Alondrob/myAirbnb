@@ -1,8 +1,12 @@
 import React from 'react'
-import { FaSignInAlt } from 'react-icons/fa'
-const Login = () => {
+import { FaBars, FaUserCircle } from 'react-icons/fa'
+const Login = ({renderFormPage}) => {
   return (
-      <FaSignInAlt size={52} />
+    <div className='flex items-center justify-center space-x-4 rounded-3xl border-2 border-blue-900 h-8 w-24'>
+    <FaBars size={24} onClick={() => renderFormPage()} />
+    <FaUserCircle size={24}/>
+    </div>
+
   )
 }
 

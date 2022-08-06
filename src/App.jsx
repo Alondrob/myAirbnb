@@ -1,10 +1,20 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from './components/header/Header'
+import Header from "./components/header/Header";
+import Feed from "./components/feed/Feed";
+import Form from "./components/forms/Form";
 const App = () => {
   return (
-    <Header/>
-  )
-}
+    <Router>
+   <Header />
+        <Feed />
+      <Routes>
+     
 
-export default App
+        <Route path="/form" element={<Form />}></Route>
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
