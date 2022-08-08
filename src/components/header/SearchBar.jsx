@@ -16,9 +16,6 @@ const SearchBar = ({ setHeader, renderFormPage }) => {
         className="italic text-center bg-slate-50 hover:bg-red-200 rounded-3xl h-12 w-96"
       />
       <FaSearch className="-ml-9" />
-      <div className="absolute right-2  mr-6">
-        <Login renderFormPage={renderFormPage} />
-      </div>
     </div>
   );
 };
