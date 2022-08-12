@@ -20,7 +20,12 @@ const Form = ({ renderFormPage }) => {
             Sign Up
           </h4>
 
-        <h4 className=" bg-white hover:bg-slate-400 rounded-3xl">Login</h4>
+        <h4
+          className=" bg-white hover:bg-slate-400 rounded-3xl"
+          onClick={() => navigate('/sign-in')}
+        >
+          Login
+        </h4>
       </div>
       <div className=" font-extrabold border-t-22  border-gray-200 text-center space-y-2 ">
         <h4 className="bg-white hover:bg-pink-200 rounded-3xl">Host Your Home</h4>
