@@ -42,9 +42,9 @@ const Property = () => {
 
         <div className="ml-96">
           <h4 className="text-center italic font-extrabold">From</h4>
-          <DateSearchBar name="fromDate" value={fromDate} handleDate={handleDate }  />
+          <DateSearchBar name="fromDate" value={fromDate} handleDate={val => setFromDate(val) }  />
           <h4 className="text-center italic font-extrabold">To</h4>
-          <DateSearchBar name="fromDate" value={fromDate} handleDate={handleDate }  />
+          <DateSearchBar name="fromDate" value={fromDate} handleDate={val => setToDate(val) }  />
           <Guests handleGuests={handleGuests} noOfGuests={noOfGuests} />
         </div>
       </div>
