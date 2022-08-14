@@ -11,20 +11,26 @@ const Card = ({ value }) => {
     const id = value.id;
     navigate(`/property/${id}`);
   };
+  const handleSave = () => {
+    const id = value.id
+    console.log(id)
+  }
   return (
-    <button onClick={getProperty}>
+    <button className="bg-white">
       <div className=" max-w-sm rounded-xl overflow-hidden shadow-xl hover:scale-105 ">
-        <div>
-          <img className=" w-64 h-64" src={value.image} />
+        <div  onClick={getProperty}>
+          <img className="  w-64 h-64" src={value.image} />
         </div>
 
         <div className="space-x-48">
           <p className=" h-16">{value.title} </p>
           <FaHeart
-            size={24}
-            className=" mt-8 mr-32"
+            size={36}
+            className=" mt-8 mb-2 mr-32"
             color={color ? 'red' : 'gray'}
-            onMouseOver={() => setColor(!color)}
+            onMouseOver={() => setColor(true)}
+            onMouseLeave={() => setColor(false)}
+            onClick={handleSave}
           />
         </div>
       </div>

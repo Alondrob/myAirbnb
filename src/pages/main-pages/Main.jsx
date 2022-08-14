@@ -1,6 +1,6 @@
 import React from 'react'
-import Feed from '../components/feed/Feed'
-import Header from '../components/header/Header'
+import Feed from '../../components/feed/Feed'
+import Header from '../../components/header/Header'
 
 const Main = () => {
   return (

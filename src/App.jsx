@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Feed from "./components/feed/Feed";
-import Form from "./pages/Form";
-import Register from "./components/forms/Register";
-import Main from "./pages/Main";
-import SignIn from "./components/forms/SignIn";
-import Property from "./pages/Property";
-import HostYourHome from "./pages/HostYourHome";
-import Help from "./pages/Help";
+import Form from "./pages/auth-pages/Form";
+import Register from "./pages/auth-pages/Register";
+import Main from "./pages/main-pages/Main";
+import SignIn from "./pages/auth-pages/SignIn";
+import Property from "./pages/misc-pages/Property";
+import HostYourHome from "./pages/misc-pages/HostYourHome";
+import Help from "./pages/misc-pages/Help";
 const App = () => {
   return (
     <Router>

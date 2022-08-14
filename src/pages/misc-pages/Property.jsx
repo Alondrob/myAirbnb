@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { testData } from "../utils/mockData";
+import { testData } from "../../utils/mockData";
 
-import Header from "../components/header/Header";
-import DateSearchBar from "../components/header/DateSearchBar";
-import Guests from "../components/cards/Guests";
-import SubmitButton from "../components/cards/SubmitButton";
+import Header from "../../components/header/Header";
+import DateSearchBar from "../../components/shared components/DateSearchBar";
+import Guests from "../../components/shared components/Guests";
+import SubmitButton from "../../components/shared components/SubmitButton";
 
 const Property = () => {
   const propertyId = useParams();

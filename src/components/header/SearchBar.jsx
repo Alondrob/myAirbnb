@@ -2,8 +2,8 @@ import { render, renderHook } from "@testing-library/react";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import Login from "../auth/Login";
-import Form from "../../pages/Form";
+import Login from "./Login";
+import Form from "../../pages/auth-pages/Form";
 
 const SearchBar = ({ setHeader, renderFormPage }) => {
   const [formPage, setFormPage] = useState(false);

@@ -2,8 +2,8 @@ import { useState } from "react";
 import HomePage from "./HomePage";
 import SearchBar from "./SearchBar";
 import PopUpBar from "./PopUpBar";
-import Form from "../../pages/Form";
-import Login from "../auth/Login";
+import Form from "../../pages/auth-pages/Form";
+import Login from "./Login";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {

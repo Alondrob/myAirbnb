@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import { useState } from "react";
 import { FaBars, FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import Form from "../../pages/Form";
+import Form from "../../pages/auth-pages/Form";
 
 const Login = ({ renderFormPage }) => {
   const navigate = useNavigate();
