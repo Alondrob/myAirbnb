@@ -10,13 +10,10 @@ const Property = () => {
   const propertyId = useParams();
   const convertedId = parseInt(propertyId.id);
   const [noOfGuests, setNoOfGuests] = useState(0);
+  const [fromDate, setFromDate] = useState();
+  const [toDate, setToDate] = useState();
 
-  let selectedProperty = {};
-  testData.forEach((element) => {
-    if (element.id === propertyId.id) {
-      selectedProperty = element;
-    }
-  });
+  const selectedProperty = testData.filter(item => item.id === propertyId.id)
 
   const handleGuests = (val) => {
     if (noOfGuests === 0) {
@@ -25,6 +22,10 @@ const Property = () => {
     setNoOfGuests(noOfGuests + val)
     
   }
+  const handleDate = (val) => {
+    setFromDate(val);
+}
+  
 
   return (
     <div>
@@ -34,17 +35,16 @@ const Property = () => {
         <div className=" max-w-sm  rounded-xl overflow-hidden shadow-sm w-9/12">
           <img
             className=" text-centerw w-96  rounded-md h-64"
-            src={selectedProperty.image}
+            src={selectedProperty[0].image}
           />
-          <p className="h-16">{selectedProperty.title}</p>
+          <p className="h-16">{selectedProperty[0].title}</p>
         </div>
 
         <div className="ml-96">
           <h4 className="text-center italic font-extrabold">From</h4>
-          <DateSearchBar/>
+          <DateSearchBar name="fromDate" value={fromDate} handleDate={handleDate }  />
           <h4 className="text-center italic font-extrabold">To</h4>
-          <DateSearchBar />
-          <h4 className="text-center italic font-extrabold">To</h4>
+          <DateSearchBar name="fromDate" value={fromDate} handleDate={handleDate }  />
           <Guests handleGuests={handleGuests} noOfGuests={noOfGuests} />
         </div>
       </div>

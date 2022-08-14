@@ -12,7 +12,7 @@ const Card = ({ value }) => {
     <button onClick={getProperty}>
       <div className=" max-w-sm rounded-xl overflow-hidden shadow-xl hover:scale-125 ">
         <img className=" w-64 h-64" src={value.image} />
-        <p className="h-16">{value.title}</p>
+        <p className=" mr-16 h-16">{value.title}</p>
       </div>
     </button>
   );
