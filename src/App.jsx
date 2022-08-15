@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 
 import Header from "./components/header/Header";
 import Feed from "./components/feed/Feed";
